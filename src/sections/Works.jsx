@@ -35,7 +35,7 @@ const PROJECTS = [
     id: 1,
     title: "EduManage: College Management System",
     description: "A full-stack web application developed using Java Servlets, JSP, JDBC, and MySQL for managing students, faculty, attendance, and result processing.",
-    image: "/images/EduManage.png",
+    image: "./images/EduManage.png",
     tags: ["Java", "Servlets", "JSP", "JDBC", "MySQL"],
     githubUrl: "https://github.com/Mohtashim-it/EduManage-College-System",
   },
@@ -43,7 +43,7 @@ const PROJECTS = [
     id: 2,
     title: "Hala-Chat: Real-Time Android Chat Application",
     description: "A real-time Android chat application built with Java, Firebase Authentication, Firestore, and XML featuring secure login, instant messaging, and active user management.",
-    image: "/images/HalaChat.jpeg",
+    image: "./images/HalaChat.jpeg",
     tags: ["Android", "Java", "Firebase", "Firestore", "XML"],
     githubUrl: "https://github.com/Mohtashim-it/HalaChat--Chatting-app",
   },
@@ -51,7 +51,7 @@ const PROJECTS = [
     id: 3,
     title: "Bank Management System with ATM Simulation",
     description: "A desktop banking application using Java Swing, JDBC, and MySQL with account management, ATM simulation, deposits, withdrawals, and secure database operations.",
-    image: "/images/ATM.png",
+    image: "./images/ATM.png",
     tags: ["Java", "Swing", "JDBC", "MySQL"],
     githubUrl: "https://github.com/Mohtashim-it/Bank-Management-System",
   },
@@ -73,7 +73,7 @@ const ProjectCard = ({ index, title, description, tags, image, githubUrl }) => (
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
           <div className="absolute top-0 right-0 z-20 flex justify-end gap-2 m-4">
             <div onClick={() => window.open(githubUrl, "_blank")} className="bg-black/60 backdrop-blur-md hover:bg-orange-500 transition-colors duration-300 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-white/10 hover:border-transparent">
-              <img src="/images/github.png" alt="Github" className="w-5 h-5 object-contain brightness-0 invert" />
+              <img src="./images/github.png" alt="Github" className="w-5 h-5 object-contain brightness-0 invert" />
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ const Works = () => (
 
       <div className="mt-10 flex flex-wrap justify-center gap-10">
         {PROJECTS.map((project, index) => (
-          <ProjectCard key={`project-${project.id}`} index={index} {...project} />
+          <ProjectCard key={project.id} index={index} {...project} />
         ))}
       </div>
 

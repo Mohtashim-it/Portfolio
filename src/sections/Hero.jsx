@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 
 const TECH_ICONS = [
-  { src: "/images/SQL.png", alt: "SQL", className: "w-12 h-12 object-contain" },
-  { src: "/images/java.png", alt: "Java", className: "w-12 h-12 bg-[#111] p-1 rounded-2xl object-contain" },
-  { src: "/images/C++.png", alt: "C++", className: "w-28 h-12 object-contain" },
-  { src: "/images/C.png", alt: "C", className: "w-28 h-12 object-contain" },
-  { src: "/images/JS.png", alt: "javascript", className: "w-20 h-20 object-contain" },
-  { src: "/images/CSS.png", alt: "css", className: "w-12 h-12 object-contain" },
-  { src: "/images/html.png", alt: "html", className: "w-12 h-12 object-contain" },
-  { src: "/images/git.png", alt: "Git", className: "w-12 h-12 object-contain" },
-  { src: "/images/github.png", alt: "Github", className: "w-12 h-12 object-contain" },
-  { src: "/images/figma1.png", alt: "Figma", className: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" },
-  { src: "/images/Kubernetes.png", alt: "Kubernetes", className: "w-12 h-12 object-contain" },
-  { src: "/images/Docker.png", alt: "Docker", className: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" },
-  { src: "/images/Spring.png", alt: "Spring", className: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" }
+  { src: "./images/SQL.png", alt: "SQL", className: "w-12 h-12 object-contain" },
+  { src: "./images/java.png", alt: "Java", className: "w-12 h-12 bg-[#111] p-1 rounded-2xl object-contain" },
+  { src: "./images/C++.png", alt: "C++", className: "w-28 h-12 object-contain" },
+  { src: "./images/C.png", alt: "C", className: "w-28 h-12 object-contain" },
+  { src: "./images/JS.png", alt: "javascript", className: "w-20 h-20 object-contain" },
+  { src: "./images/CSS.png", alt: "css", className: "w-12 h-12 object-contain" },
+  { src: "./images/html.png", alt: "html", className: "w-12 h-12 object-contain" },
+  { src: "./images/git.png", alt: "Git", className: "w-12 h-12 object-contain" },
+  { src: "./images/github.png", alt: "Github", className: "w-12 h-12 object-contain" },
+  { src: "./images/figma1.png", alt: "Figma", className: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" },
+  { src: "./images/Kubernetes.png", alt: "Kubernetes", className: "w-12 h-12 object-contain" },
+  { src: "./images/Docker.png", alt: "Docker", className: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" },
+  { src: "./images/Spring.png", alt: "Spring", className: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" }
 ];
 
 const SOCIAL_LINKS = [
@@ -74,8 +74,8 @@ const Hero = () => {
                   <div 
                     className={`${dims} bg-white group-hover:bg-orange-500 transition-colors duration-300`} 
                     style={{ 
-                      WebkitMask: `url('/images/${icon}') no-repeat center / contain`, 
-                      mask: `url('/images/${icon}') no-repeat center / contain` 
+                      WebkitMask: `url('./images/${icon}') no-repeat center / contain`, 
+                      mask: `url('./images/${icon}') no-repeat center / contain` 
                     }} 
                     aria-label={label}
                   />
@@ -91,7 +91,7 @@ const Hero = () => {
             
             <div className="absolute z-10 flex justify-center items-center pointer-events-none translate-y-8" style={{ transform: "translateZ(0)" }}>
               <img 
-                src="/images/photo1.png" 
+                src="./images/photo1.png" 
                 alt="Mohtashim Khan" 
                 className="w-[200px] md:w-[260px] lg:w-[360px] xl:w-[415px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" 
               />

@@ -7,15 +7,10 @@ const INPUT_CLASSES = "w-full bg-[#051114]/90 text-white border-none rounded-lg 
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+  const handleChange = ({ target: { name, value } }) => {
+    setForm((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
@@ -56,11 +51,7 @@ const Contact = () => {
             <div className="card-border rounded-2xl py-8 sm:py-10 relative overflow-hidden h-full flex flex-col items-center justify-center shadow-2xl w-full bg-[url('/images/emailBG.png')] bg-cover bg-center bg-no-repeat">
               <div className="absolute inset-0 bg-black/60 z-0" />
 
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="w-[85%] md:w-[80%] flex flex-col items-center gap-5 sm:gap-6 relative z-10"
-              >
+              <form ref={formRef} onSubmit={handleSubmit} className="w-[85%] md:w-[80%] flex flex-col items-center gap-5 sm:gap-6 relative z-10">
                 <input
                   type="text"
                   name="name"

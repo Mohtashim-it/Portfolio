@@ -1,8 +1,8 @@
 const SOCIAL_LINKS = [
   { name: "linkedin2", link: "https://www.linkedin.com/in/mohtashim-khan-aba5aa327/" },
   { name: "github2", link: "https://github.com/Mohtashim-it" },
-  { name: "insta", link: "#" },
-  { name: "leetcode", link: "#" }
+  { name: "insta", link: "https://www.instagram.com/al_mohtashimk/" },
+  { name: "leetcode", link: "https://leetcode.com/u/MohtashimKhanit" }
 ];
 
 const FILTER_DEFAULT = "brightness(0) invert(1)";
@@ -35,7 +35,7 @@ const Footer = () => {
               className="w-12 h-12 rounded-full border border-white/10 bg-[#0a0a0a] flex items-center justify-center group hover:border-orange-500/40 hover:bg-[#151515] transition-all duration-300 shadow-lg"
             >
               <img
-                src={`/images/${name}.png`}
+                src={`./images/${name}.png`}
                 alt={`${name} icon`}
                 className="w-5 h-5 transition-all duration-300 opacity-60 group-hover:opacity-100 group-hover:scale-110"
                 style={{ filter: FILTER_DEFAULT }}

@@ -1,18 +1,18 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 const SKILLS = [
-  { name: "Java", src: "/images/java.png", imgClass: "w-12 h-12 bg-[#111] p-1 rounded-2xl object-contain" },
-  { name: "SQL", src: "/images/SQL.png", imgClass: "w-14 h-14 object-contain" },
-  { name: "C++", src: "/images/C++.png", imgClass: "w-28 h-12 object-contain" },
-  { name: "C", src: "/images/C.png", imgClass: "w-28 h-12 object-contain" },
-  { name: "HTML", src: "/images/html.png", imgClass: "w-12 h-12 object-contain" },
-  { name: "CSS", src: "/images/CSS.png", imgClass: "w-12 h-12 object-contain" },
-  { name: "JavaScript", src: "/images/JS.png", imgClass: "w-16 h-16 object-contain" },
-  { name: "Git", src: "/images/git.png", imgClass: "w-12 h-12 object-contain" },
-  { name: "GitHub", src: "/images/github.png", imgClass: "w-12 h-12 object-contain" },
-  { name: "Figma", src: "/images/Figma.png", imgClass: "w-12 h-10 bg-[#111] p-1 rounded-2xl object-contain" },
-  { name: "Kubernetes", src: "/images/Kubernetes.png", imgClass: "w-12 h-12 object-contain" },
-  { name: "Docker", src: "/images/Docker.png", imgClass: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" },
+  { name: "Java", src: "./images/java.png", imgClass: "w-12 h-12 bg-[#111] p-1 rounded-2xl object-contain" },
+  { name: "SQL", src: "./images/SQL.png", imgClass: "w-14 h-14 object-contain" },
+  { name: "C++", src: "./images/C++.png", imgClass: "w-28 h-12 object-contain" },
+  { name: "C", src: "./images/C.png", imgClass: "w-28 h-12 object-contain" },
+  { name: "HTML", src: "./images/html.png", imgClass: "w-12 h-12 object-contain" },
+  { name: "CSS", src: "./images/CSS.png", imgClass: "w-12 h-12 object-contain" },
+  { name: "JavaScript", src: "./images/JS.png", imgClass: "w-16 h-16 object-contain" },
+  { name: "Git", src: "./images/git.png", imgClass: "w-12 h-12 object-contain" },
+  { name: "GitHub", src: "./images/github.png", imgClass: "w-12 h-12 object-contain" },
+  { name: "Figma", src: "./images/Figma.png", imgClass: "w-12 h-10 bg-[#111] p-1 rounded-2xl object-contain" },
+  { name: "Kubernetes", src: "./images/Kubernetes.png", imgClass: "w-12 h-12 object-contain" },
+  { name: "Docker", src: "./images/Docker.png", imgClass: "w-16 h-14 bg-[#111] p-1 rounded-2xl object-contain" },
 ];
 
 const SkillCard = ({ name, src, imgClass, index }) => {
